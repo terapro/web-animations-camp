@@ -1,0 +1,30 @@
+body {
+  padding: 50px;
+}
+
+#container {
+  padding: 20px;
+  height: 250px;
+  background-color: #eee;
+  text-align: center;
+}
+
+#hexagon {
+  animation: bobble 0.5s infinite;
+}
+
+/* animation-name: ----------*/
+/* animation-duration: ----------*/
+/* animation-iteration-count: ----------*/
+
+@keyframes bobble {
+  0% {
+    transform: translateY(10px);
+  }
+  50% {
+    transform: translateY(40px);
+  }
+  100% {
+    transform: translateY(10px);
+  }
+}
