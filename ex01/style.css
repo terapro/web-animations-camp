@@ -13,9 +13,9 @@ body {
   animation: bobble 0.5s infinite;
 }
 
-/* animation-name: ----------*/
-/* animation-duration: ----------*/
-/* animation-iteration-count: ----------*/
+/* animation-name: ---/ give it a name /-------*/
+/* animation-duration: -----/ 0.5s /-----*/
+/* animation-iteration-count: -----/ number or infinite /-----*/
 
 @keyframes bobble {
   0% {

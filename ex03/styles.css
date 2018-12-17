@@ -1,0 +1,31 @@
+#container {
+  width: 100%;
+  height: 290px;
+  background-color: #eee;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#hexagon {
+  animation: bobble 2s infinite; /* you can specify the timin function in the animation declaration */
+}
+
+/* animation-name: --- / deathstar/--*/
+/* animation-duration: --- / 25s /--*/
+/* animation-iteration-count: --- / 1 /--*/
+/* animation-timing-function: --- / ease-out /--*/
+
+@keyframes bobble {
+  0% {
+    transform: translate3d(50px, 40px, 0px);
+    animation-timing-function: ease-in; /* OR you can specify the timing function on each individual keyframe */
+  }
+  50% {
+    transform: translate3d(50px, 200px, 0px);
+    animation-timing-function: ease-out; /* It affects till the next keyframe */
+  }
+  100% {
+    transform: translate3d(50px, 40px, 0px);
+  }
+}
