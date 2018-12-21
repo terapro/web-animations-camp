@@ -1,0 +1,23 @@
+.square {
+  width: 150px;
+  height: 150px;
+  background: blue;
+  animation: robotSlide 1s linear infinite;
+  will-change: transform, opacity;
+  margin: auto;
+}
+
+@keyframes robotSlide {
+  0% {
+    transform: translate(0px, 0px);
+    opacity: 1;
+  }
+  50% {
+    transform: translate(10px, 10px);
+    opacity: 0.5;
+  }
+  100% {
+    transform: translate(0px, 0px);
+    opacity: 1;
+  }
+}
